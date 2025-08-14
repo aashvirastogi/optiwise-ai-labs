@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Optiwise.ai Labs | Try Our AI Tools</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+  <style>
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    .floating { animation: float 4s ease-in-out infinite; }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+
+<!-- HEADER -->
+<header class="bg-white/80 dark:bg-gray-800/80 shadow-md sticky top-0 z-50 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <a href="https://optiwise.ai" target="_blank">
+        <img src="optiwise_logo.png" alt="Optiwise.ai Logo" class="h-10 hover:scale-105 transition-transform duration-300">
+      </a>
+    </div>
+
+    <!-- Nav Buttons and Theme Toggle -->
+    <div class="flex items-center space-x-4">
+      <a href="#tools" class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition">All Tools</a>
+      <a href="https://optiwise-frontend-703704727902.us-central1.run.app/" target="_blank" class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition">Competition Analysis</a>
+      <a href="https://optiwsietacos-ttpzigy4ei8dnzmvhsmgyt.streamlit.app/" target="_blank" class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition">Talk to Tacos</a>
+      <button id="darkToggle" class="bg-gray-200 dark:bg-gray-700 text-sm px-4 py-2 rounded hover:bg-gray-300 dark:hover:bg-gray-600 transition">Toggle Theme</button>
+    </div>
+  </div>
+
+  <!-- Title and description below header -->
+  <div class="text-center pb-8 mt-4">
+    <h1 class="text-3xl font-bold text-teal-600">Optiwise.ai Labs</h1>
+    <p class="mt-2 text-lg text-gray-600 dark:text-gray-300">Supercharge your creativity with our suite of AI tools.</p>
+    <a href="#tools" class="mt-6 inline-block bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition">Explore Tools</a>
+  </div>
+</header>
+
+<!-- statistics -->
+<section class="py-16 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-center items-center gap-8 text-center">
+    
+    <!-- Circle 1 -->
+    <div class="w-40 h-40 rounded-full bg-orange-500 text-white flex flex-col justify-center items-center shadow-lg floating">
+      <span class="text-2xl font-bold">1M+</span>
+      <span class="text-sm mt-1">Pages Optimized</span>
+    </div>
+
+    <!-- Circle 2 -->
+    <div class="w-40 h-40 rounded-full bg-teal-600 text-white flex flex-col justify-center items-center shadow-lg floating">
+      <span class="text-2xl font-bold">15k+</span>
+      <span class="text-sm mt-1">Brands</span>
+    </div>
+
+    <!-- Circle 3 -->
+    <div class="w-40 h-40 rounded-full bg-orange-500 text-white flex flex-col justify-center items-center shadow-lg floating">
+      <span class="text-2xl font-bold">470+</span>
+      <span class="text-sm mt-1">Categories</span>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- tools -->
+<section id="tools" class="py-16 bg-teal-600 text-black">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-semibold text-center mb-12">AI Tools by Optiwise.ai Labs</h2>
+
+    <!-- Centered grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+      
+      <!-- 1 -->
+      <div class="bg-white text-gray-800 p-6 rounded-2xl shadow hover:shadow-lg transition relative overflow-hidden w-full max-w-sm">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
+             class="w-12 h-12 floating absolute top-4 right-4 opacity-40" 
+             alt="AI Icon">
+        <h3 class="text-xl font-semibold mb-2">Competition Analysis</h3>
+        <p class="text-gray-600 mb-4">Analyze competitors in real-time with our AI-powered insights engine.</p>
+        <a href="https://optiwise-frontend-703704727902.us-central1.run.app/" 
+           target="_blank" 
+           class="text-teal-600 font-medium hover:underline">Try Now →</a>
+      </div>
+
+      <!-- 2 -->
+      <div class="bg-white text-gray-800 p-6 rounded-2xl shadow hover:shadow-lg transition relative overflow-hidden w-full max-w-sm">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712101.png" 
+             class="w-12 h-12 floating absolute top-4 right-4 opacity-40" 
+             alt="AI Icon">
+        <h3 class="text-xl font-semibold mb-2">Talk to Tacos</h3>
+        <p class="text-gray-600 mb-4">[DESCRIPTION.]</p>
+        <a href="https://optiwsietacos-ttpzigy4ei8dnzmvhsmgyt.streamlit.app/" 
+           target="_blank" 
+           class="text-teal-600 font-medium hover:underline">Try Now →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- questions -->
+<section class="py-16 bg-white dark:bg-gray-900 text-center">
+  <h2 class="text-3xl font-semibold text-teal-600 dark:text-teal-400 mb-6">Have questions?</h2>
+  <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
+    Our team is here to help you get the most out of Optiwise.ai Labs.
+  </p>
+  <a href="https://meetings.optiwise.ai/?utm_source=homepage#/paul" 
+     target="_blank" 
+     class="px-6 py-3 bg-orange-500 text-white text-lg rounded-full shadow hover:bg-orange-600 transition">
+    Talk to an expert!
+  </a>
+</section>
+
+
+  <!-- newsletter info -->
+  <section class="mt-20 bg-orange-500 text-white py-12">
+    <div class="max-w-3xl mx-auto text-center px-6">
+      <h2 class="text-2xl font-semibold mb-4">Get Early Access to New Tools</h2>
+      <p class="mb-6">Subscribe to our newsletter and be the first to know when we launch new AI products.</p>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="flex flex-col sm:flex-row gap-4 justify-center">
+        <input type="email" name="email" required placeholder="Your email address" class="w-full sm:w-auto px-4 py-2 rounded text-gray-900"/>
+        <button type="submit" class="bg-white text-orange-500 px-6 py-2 rounded font-semibold hover:bg-gray-100 transition">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- rights -->
+  <footer class="bg-white dark:bg-gray-800 border-t dark:border-gray-700 mt-12 py-6">
+    <div class="max-w-6xl mx-auto px-6 text-center text-sm text-gray-500 dark:text-gray-400">
+      © 2023 Optiwise.ai. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JS for Dark Mode -->
+  <script>
+    const toggle = document.getElementById('darkToggle');
+    const html = document.documentElement;
+    toggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+    });
+  </script>
+
+</body>
+</html>
